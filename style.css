@@ -1,0 +1,41 @@
+
+
+.row{
+    padding: 10px;
+    background-color: #e3c6698c;
+    margin: 10px;
+}
+
+#time{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+            
+}
+
+#textBox{
+    margin: 0px;
+    padding: 0px;
+    
+    
+
+}
+
+#userInput{
+    margin: 0px;
+    padding:5px;
+    width: 100%;
+    background-color: #e3c6698c;
+
+}
+
+#saveBtnBox{
+    
+            
+
+}
+
+#saveBtn{
+    width: 100%;
+    height: 100%;
+}
