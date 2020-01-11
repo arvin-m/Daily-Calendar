@@ -1,41 +1,61 @@
 
+body{
+    background-color:rgb(209, 213, 216);
+}
+nav{
+    height: 165px;
+    
+}
+
+.container-sm{
+    margin-top: 40px;
+}
 
 .row{
     padding: 10px;
-    background-color: #e3c6698c;
-    margin: 10px;
+    background-color: #00bcd4;
+    margin: 2px;
 }
 
-#time{
+.time{
     margin: 0px;
     padding: 0px;
     text-align: center;
             
 }
 
-#textBox{
+/* .form{
     margin: 0px;
     padding: 0px;
     
     
 
-}
+} */
 
-#userInput{
-    margin: 0px;
+.form{
+    margin-right: 0px;
     padding:5px;
     width: 100%;
-    background-color: #e3c6698c;
+    background-color: #383b3b;
 
 }
 
-#saveBtnBox{
+
+
+.saveBtn{
     
-            
-
-}
-
-#saveBtn{
     width: 100%;
     height: 100%;
+}
+
+.red{
+    background-color: rgba(180, 34, 34, 0.829) !important;
+}
+
+.gray{
+    background-color: rgba(160, 157, 157, 0.781) !important;
+}
+
+.green{
+    background-color: rgba(2, 150, 2, 0.788) !important;
 }

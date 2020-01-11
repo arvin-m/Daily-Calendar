@@ -1,172 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Daily Calendar</title>
-        <!-- adding Boostrap CSS link -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Calendar</title>
+    <!-- adding Boostrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <!-- adding Boostrap JS link -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <!-- adding Boostrap JS link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- link moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+
+
+
+    <!-- adding jQuery CDN -->
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+
+    <!-- adding CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- adding JS file -->
+    <script defer type="text/javascript" src="script.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-light bg-light shadow-lg p-3 mb-5 bg-white rounded">
+        <h1> Daily Calender</h1>
+        <p id= "local-time"></p>
+        <a class="navbar-brand" href="#">
+            <img src="img/Calendar.png" width="30" height="30" alt="">
             
-            <!-- link moment.js -->
+        </a>
+        
+    </nav>
 
-            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <div class="container-sm">
 
-    
+        <!-- 9AM... -->
+        <div class="row" id="9">
+            <div class=" col-sm-2 time"   id="time9am">9 AM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-9">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 10AM... -->
+        <div class="row" id="10">
+            <div class=" col-sm-2 time"   id="time10am">10 AM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-10">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+         <!-- 11AM... -->
+         <div class="row" id="11">
+            <div class=" col-sm-2 time"   id="time11am">11 AM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-11">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 12PM... -->
+        <div class="row" id="12">
+            <div class=" col-sm-2 time"   id="time12Pm">12 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-12">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 1PM... -->
+        <div class="row" id="13">
+            <div class=" col-sm-2 time"   id="time13Pm">1 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-13">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 2PM... -->
+        <div class="row" id="14">
+            <div class=" col-sm-2 time"   id="time14Pm">2 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-14">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 3PM... -->
+        <div class="row" id="15">
+            <div class=" col-sm-2 time"   id="time15Pm">3 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-15">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 4PM... -->
+        <div class="row" id="16">
+            <div class=" col-sm-2 time"   id="time16Pm">4 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-16">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        <!-- 5PM... -->
+        <div class="row" id="17">
+            <div class=" col-sm-2 time"   id="time17Pm">5 PM</div>
+            <input class="form-control col-sm-9 form "     id="userInput-17">
+            <button class="btn btn-outline-light col-sm-1 saveBtn " > Save </button>
+        </div>
+        
 
-        <!-- adding jQuery CDN -->
-        <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
 
-            <!-- adding CSS file -->
-            <link rel="stylesheet" type="text/css" href="style.css">
-
-            <!-- adding JS file -->
-            <script type="text/javascript" src="script.js"></script>
-
-
-    </head>
-
-
-    <body>
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/Calendar.png" width="30" height="30" alt=""> Daily Calendar
-            </a>
-        </nav>
-
-        <div class="container-sm"></div>
-            
-             <!-- 9AM... -->
-             <div class="row">
-                <div class="col-sm-2" id="time">
-                    9AM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-             <!-- 10AM... -->
-             <div class="row">
-                <div class="col-sm-2" id="time">
-                    10AM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-             <!-- 11AM... -->
-             <div class="row">
-                <div class="col-sm-2" id="time">
-                    11AM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-             <!-- 12PM... -->
-             <div class="row">
-                <div class="col-sm-2" id="time">
-                    12PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-             <!-- 1PM... -->
-             <div class="row">
-                <div class="col-sm-2" id="time">
-                    1PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-            <!-- 2PM... -->
-            <div class="row">
-                <div class="col-sm-2" id="time">
-                    2PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-            <!-- 3PM... -->
-            <div class="row">
-                <div class="col-sm-2" id="time">
-                    3PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-            <!-- 4PM... -->
-            <div class="row">
-                <div class="col-sm-2" id="time">
-                    4PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
-
-            <!-- 5PM... -->
-            <div class="row">
-                <div class="col-sm-2" id="time">
-                    5PM
-                </div>
-                <div class="col-sm-9" id="textBox">
-                    <input id="userInput"/>
-                </div>
-                <div class="col-sm-1" id="saveBtnBox">
-                    <button id="saveBtn">Save</button>
-                </div>
-            </div>
 
 
         </div>
@@ -174,6 +122,10 @@
 
 
 
-    </body>
+
+
+
+
+</body>
 
 </html>
