@@ -1,4 +1,6 @@
+.container-sm{ margin-bottom: 30px;
 
+}
 body{
     background-color:rgb(209, 213, 216);
 }
@@ -32,13 +34,6 @@ h4{
             
 }
 
-/* .form{
-    margin: 0px;
-    padding: 0px;
-    
-    
-
-} */
 
 .form{
     margin-right: 0px;
