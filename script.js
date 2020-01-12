@@ -1,8 +1,6 @@
 // make sure js file is linked
 // console.log("this is js");
-
 // console.log("moment",moment().hours());
-
 
 
 $(".saveBtn").on("click", save);

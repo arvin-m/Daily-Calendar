@@ -1,8 +1,12 @@
-.container-sm{ margin-bottom: 30px;
 
-}
+
+
 body{
     background-color:rgb(209, 213, 216);
+}
+
+.container-sm{ 
+    margin-bottom: 30px
 }
 nav{
     height: 165px;
