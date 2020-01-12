@@ -2,7 +2,7 @@
 // console.log("this is js");
 
 // console.log("moment",moment().hours());
-$(".container-sm").hide(3).fadeIn(4000);
+
 
 
 $(".saveBtn").on("click", save);
