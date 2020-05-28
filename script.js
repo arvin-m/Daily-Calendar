@@ -33,4 +33,3 @@ $("#userInput-15").val(localStorage.getItem("3 PM"));
 $("#userInput-16").val(localStorage.getItem("4 PM"));
 $("#userInput-17").val(localStorage.getItem("5 PM"));
 $("#local-time").html(moment().format('llll'));
-  // console.log(moment());
